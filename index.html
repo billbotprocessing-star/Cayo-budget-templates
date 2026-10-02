@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Budget Plan | Cayo Bookkeeping</title>
+    <meta name="description" content="Answer a few quick questions and get a personalized monthly budget plan from Cayo Bookkeeping." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!--
+      Hidden static form so Netlify Forms detects the lead form at deploy time.
+      Field names must match what src/lib/submitLead.js sends.
+    -->
+    <form name="budget-lead" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="consent" />
+      <input type="text" name="monthly_income" />
+      <input type="text" name="primary_goal" />
+      <input type="text" name="business_owner" />
+      <input type="text" name="emergency_fund" />
+      <input type="text" name="debt_balance" />
+      <input type="text" name="budget_split" />
+      <textarea name="all_answers"></textarea>
+    </form>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
