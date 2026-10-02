@@ -1,9 +1,8 @@
 // Edit these to match your business.
 export const BRAND = {
   name: 'Cayo Bookkeeping',
-  // TODO: replace with your real booking / contact page (Calendly, website, etc.)
-  bookingUrl: 'https://example.com/book-a-call',
-  ctaLabel: 'Book a free 20-minute call',
+  bookingUrl: 'https://cal.com/danielle-traynor-xid1mw/30min',
+  ctaLabel: 'Book a free 30-minute discovery call',
   email: '', // optional, e.g. 'hello@cayobookkeeping.com'
 };
 
