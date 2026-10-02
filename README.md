@@ -12,7 +12,7 @@ and then see a personalized budget plan with charts, insights, and a printable P
 
 ## Customize
 
-- `src/config.js` — business name and **booking link** (replace the placeholder URL).
+- `src/config.js` — business name and **booking link** (Cal.com discovery call).
 - `src/questions.js` — edit question wording or options.
 - `src/budget.js` — tweak percentages, grocery/utility estimates, insight rules.
 - `src/styles.css` — colors are CSS variables at the top.
