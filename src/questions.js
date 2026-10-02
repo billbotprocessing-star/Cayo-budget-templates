@@ -1,4 +1,5 @@
 // Assessment questions. `type` is 'currency' or 'choice'.
+// Currency inputs show "/ month" unless `suffix` overrides it.
 // `showIf(answers)` hides a question unless it returns true.
 export const QUESTIONS = [
   {
@@ -54,14 +55,15 @@ export const QUESTIONS = [
   {
     id: 'debtBalance',
     type: 'currency',
-    label: 'How much non-mortgage debt do you have in total?',
-    help: 'Credit cards, personal loans, student loans, medical bills. Enter 0 if none. Don’t include your car loan if you counted it above.',
+    label: 'How much do you owe in total on your debts?',
+    help: 'Add up the full balances on credit cards, student loans, personal loans and medical bills. Leave out your mortgage and car loan, since those payments are already covered. Enter 0 if you have none.',
+    suffix: 'total owed',
   },
   {
     id: 'debtMinimums',
     type: 'currency',
     label: 'What are the combined minimum payments on that debt?',
-    help: 'The total of all required monthly minimum payments.',
+    help: 'Add up the minimum monthly payments on the debts you just entered.',
     showIf: (a) => Number(a.debtBalance) > 0,
   },
   {

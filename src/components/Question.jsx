@@ -64,7 +64,7 @@ export default function Question({ question: q, value, onChange, onNext, onBack,
                 setError('');
               }}
             />
-            <span className="per">/ month</span>
+            <span className="per">{q.suffix ?? '/ month'}</span>
           </div>
         </form>
       )}
